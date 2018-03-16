@@ -1,3 +1,6 @@
+// 2018.03.16
+// Baekjun Online Judge
+// Q. 1000 - A+B
 #include <stdio.h>
 
 int main() {

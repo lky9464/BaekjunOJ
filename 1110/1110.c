@@ -1,3 +1,7 @@
+// 2018.03.16
+// Baekjun Online Judge
+// Q. 1110 - 더하기 사이클
+
 #include <stdio.h>
 
 int main() {
