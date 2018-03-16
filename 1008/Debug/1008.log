@@ -1,0 +1,4 @@
+﻿  1008.c
+c:\users\lky94\source\repos\baekjunonlinejudge\1008\1008.c(8): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double *'입니다.
+c:\users\lky94\source\repos\baekjunonlinejudge\1008\1008.c(8): warning C4477: 'scanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'double *'입니다.
+  1008.vcxproj -> C:\Users\lky94\source\repos\BaekjunOnlineJudge\1008\Debug\1008.exe
