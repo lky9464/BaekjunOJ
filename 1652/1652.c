@@ -18,7 +18,7 @@ int main() {
 		printf("%d행 방모양(X or .) :", i + 1);
 		scanf("%s", room[i]);
 	}
-	
+	/*
 	printf("\n그림\n");
 	for (int i = 0; i < wallLength; i++) {
 		for (int j = 0; j < wallLength; j++) {
@@ -29,7 +29,7 @@ int main() {
 		}
 		printf("\n");
 	}
-
+	*/
 	//if wallLength == 5
 
 
@@ -59,15 +59,7 @@ int main() {
 		}
 	}
 
-	printf("가로로 누울 수 있는 자리 >> %d자리\n", colLay);
-	printf("세로로 누울 수 있는 자리 >> %d자리\n", rowLay);
-
-
-
-
-
-
-
+	printf("가로 >> %d, 세로 >> %d\n", colLay, rowLay);
 	//해제
 	free(room);
 	
