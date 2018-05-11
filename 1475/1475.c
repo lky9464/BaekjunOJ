@@ -2,44 +2,78 @@
 
 #include <stdio.h>
 #include <string.h>
-#define MAX_STRING_SIZE 1000000 //백만
+
+#define MAX_STRING_SIZE 100000 //자릿수
 
 int main() {
-
+	double set = 0;
+	int sum = 0;
+	double maxElement = 0;
+	
 	char roomNum[MAX_STRING_SIZE];
+	float classify[9]; //각 숫자별(0~9) 갯수
+	for (int i = 0; i < 9; i++)
+		classify[i] = 0;
 
 	printf("방번호를 입력하세요 : ");
 	scanf("%s", roomNum);
 
-	//printf("%s\n", roomNum);
 
-	int length = strlen(roomNum);
-	double set = 0;
-	int overlap = 0;
+	//한자리 씩 비교
 
 	for (int i = 0; i < strlen(roomNum); i++) {
 
 		switch (roomNum[i]) {
 
-		case '0':case '1':case '2':case '3':case '4':case '5':case '7':case '8':
-			set += 1;
+		case '0':
+			classify[0] += 1;
+			break;
+		case '1':
+			classify[1] += 1;
+			break;
+		case '2':
+			classify[2] += 1;
+			break;
+		case '3':
+			classify[3] += 1;
+			break;
+		case '4':
+			classify[4] += 1;
+			break;
+		case '5':
+			classify[5] += 1;
 			break;
 		case '6':case '9':
-			overlap += 1;
+			classify[6] += 0.5;
+			break;
+		case '7':
+			classify[7] += 1;
+			break;
+		case '8':
+			classify[8] += 1;
 			break;
 		default:
-			printf("잘못된 문자입니다.\n");
-			return 0;
+			break;
 		}
 	}
-	if (overlap % 2 == 1) {
-		set = set + 0.5*overlap + 0.5;
+	
+	for (int i = 0; i < 9; i++) {
+		if (classify[i] > maxElement) {
+			maxElement = classify[i];
+		}
 	}
-	else if(overlap % 2 == 0) {
-		set += (double)overlap / 2;
-	}
+	
+	double tmp = maxElement - (int)maxElement;
 
-	printf("필요한 세트 갯수 : %d\n", (int)set);
+	if (tmp == 0) {
+		set = maxElement;
+		printf("필요한 세트 >> %d\n", (int)set);
+	}
+	else {
+		set = maxElement + 0.5;
+		printf("필요한 세트 >> %d\n", (int)set);
+	}
+	
 
 	return 0;
 }
