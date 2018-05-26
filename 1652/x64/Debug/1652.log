@@ -1,0 +1,6 @@
+﻿  1652.c
+c:\users\lee kwang yeon\source\repos\baekjunoj\1652\1652.c(14): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+c:\users\lee kwang yeon\source\repos\baekjunoj\1652\1652.c(14): warning C4312: '형식 캐스트': 'int'에서 더 큰 'char **'(으)로의 변환입니다.
+c:\users\lee kwang yeon\source\repos\baekjunoj\1652\1652.c(16): warning C4312: '형식 캐스트': 'int'에서 더 큰 'char *'(으)로의 변환입니다.
+c:\users\lee kwang yeon\source\repos\baekjunoj\1652\1652.c(63): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  1652.vcxproj -> C:\Users\Lee Kwang Yeon\source\repos\BaekjunOJ\1652\x64\Debug\1652.exe
